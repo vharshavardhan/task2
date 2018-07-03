@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <video id="vid" src="video/videoplayback.mp4" autoplay controls="controls" loop muted>
+
+    </video>
+    <button type="button" name="button" onclick="pause()"> Pause </button>
+    <button type="button" name="button" onclick="play()">play</button>
+<audio id="aid"src="audio/kalimba.mp3"  autoplay controls="controls" loop muted>
+
+</audio>
+<button type="button" name="button" onclick="pause1()"> Pause </button>
+<button type="button" name="button" onclick="play1()">play</button>
+
+  </body>
+</html>
+<script type="text/javascript">
+  function pause(){
+    var vide=document.querySelector("#vid");
+    vide.pause();
+
+  }
+  function play(){
+    var vide=document.querySelector("#vid");
+    vide.play();
+  }
+  function pause1(){
+    var audio=document.querySelector("#aid");
+    audio.pause();
+
+  }
+  function play1(){
+    var audio=document.querySelector("#aid");
+    audio.play();
+  }
+
+</script>
